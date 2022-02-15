@@ -13,11 +13,13 @@ class CouponRepo:
         """
             Return a list of available coupons
         """
-        pass
+        return self.dbClient.getDocuments()
 
     def addCoupon(self,coupon):
         """
-            Create a new coupon in the DB
+            Create a new coupon and insert into the collection.
+
+            CouponId : Type of coupon (Flat/Percentage) - seconds and date - randomly generated 4 characters
         """
         couponCode = "{0}-{1}-{2}".format(chr(coupon.get("type")),dt.strftime(dt.now(),"%S%d"),str(uuid.uuid4()).split('-')[1])
         coupon["_id"] = couponCode

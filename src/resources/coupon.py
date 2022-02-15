@@ -8,7 +8,7 @@ couponRepo = CouponRepo()
 class CouponListResource(Resource):
     def get(self):
         result = couponRepo.listCoupons()
-        return jsonify({"data":result})
+        return jsonify({"coupons":result})
 
 class AddCouponResource(Resource):
     def post(self):
