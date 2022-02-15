@@ -1,6 +1,10 @@
 import db
+from db.mongo_client import DbClient
 
 class CouponRepo:
+
+    def __init__(self):
+        self.dbClient = DbClient()
     
     def listCoupons(self):
         """
@@ -12,7 +16,7 @@ class CouponRepo:
         """
             Create a new coupon in the DB
         """
-        pass
+        self.dbClient.addCoupon()
 
     def validateCoupon(self):
         """
