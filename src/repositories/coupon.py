@@ -41,6 +41,7 @@ class CouponRepo:
         if not coupon.active:
             return self.customResponse(0,Status.USED.value)
         if dt.now() > parse(coupon.endDate):
+            self.dbClient.updateDocument(properties["couponCode"],{config.ACTIVE:False})
             return self.customResponse(0,Status.EXPIRED.value)
         if properties["cartAmount"] < coupon.minAmount:
             return self.customResponse(0,Status.INELIGIBLE.value)
