@@ -14,4 +14,8 @@ IDIOSYNCRASY = "idiosyncrasy"
 ACTIVE = "active"
 ID = "_id"
 
+COUPON_CODE = "couponCode"
+COUPONS = "coupons"
+CART_AMOUNT = "cartAmount"
+
 DATABASE_URL = os.getenv("MONGO_URL")

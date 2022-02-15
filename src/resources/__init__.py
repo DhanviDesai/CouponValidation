@@ -1,1 +1,1 @@
-from .coupon import CouponListResource,AddCouponResource,ValidateCouponResource
+from .coupon import CouponListResource,AddCouponResource,ValidateCouponResource,DeleteInactiveCouponsResource
