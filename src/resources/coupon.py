@@ -18,5 +18,6 @@ class AddCouponResource(Resource):
 
 class ValidateCouponResource(Resource):
     def post(self):
-        result = couponRepo.validateCoupon()
+        req = request.get_json()
+        result = couponRepo.validateCoupon(req)
         return jsonify(result)
