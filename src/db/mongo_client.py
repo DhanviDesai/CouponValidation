@@ -8,12 +8,11 @@ class DbClient:
     def __init__(self):
         self.client = MongoClient(config.DATABASE_URL)
     
-    def addCoupon(self):
-        dblist = self.client.list_database_names()
+    def addCoupon(self,coupon):
         db = self.client[config.DATABASE]
         collection = db[config.COLLECTION]
-        coupon = {"_id":"TodaysDate2","startDate":"","endDate":"","type":"FLAT","minAmount":100,"maxPermissable":300}
-        print(collection.insert_one(coupon))
+        insertResult = collection.insert_one(coupon)
+        return insertResult.inserted_id
 
 
 

@@ -1,4 +1,4 @@
-import json
+from flask import request
 from flask_restful import Resource
 from flask import jsonify
 from repositories import CouponRepo
@@ -12,8 +12,9 @@ class CouponListResource(Resource):
 
 class AddCouponResource(Resource):
     def post(self):
-        result = couponRepo.addCoupon()
-        return jsonify(result)
+        req = request.get_json()
+        result = couponRepo.addCoupon(req)
+        return jsonify({"couponCode":result})
 
 class ValidateCouponResource(Resource):
     def post(self):
