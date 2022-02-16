@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../App.css";
 import ListCoupon from "./ListCoupon";
+import ValidateCoupon from "./ValidateCoupon";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -52,7 +53,7 @@ function Tabs() {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          
+         <ValidateCoupon /> 
         </div>
 
         <div

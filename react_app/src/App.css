@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   overflow-y: visible;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .Background{
@@ -36,8 +37,8 @@
   display: block;
   margin-top: 2vh;
   margin-bottom:2vh;
-  border-radius: 4px;
-  color: #CECECE;
+  border-radius: 8px;
+  color: #000000;
 }
 
 .couponHolder{
@@ -66,7 +67,7 @@
 }
 
 .active-tabs  {
-  border-bottom: 1px solid #06081C;
+  border-bottom: 1px solid #0B3F7B;
 }
 
 /* button {
@@ -84,11 +85,11 @@
 /*Tab layout css done*/
 
 .flatCoupons{
-  background-color: #3E4272;
+  background-color: rgba(123, 21, 11, 0.15);
 }
 
 .percentageCoupons{
-  background-color: #3E726E;
+  background-color: rgba(11, 114, 123, 0.15);
 }
 
 .deleteButton{
@@ -96,4 +97,52 @@
   margin: 8px;
   width: 24px;
   height: 24px;
+}
+
+.cartAmount{
+  font-size: large;
+  justify-content: space-between;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.couponCode{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.customButton{
+  margin: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: none;
+  font-size: larger;
+  font-family:'Gruppo', cursive;
+  border-radius: 4px;
+  color:#000000;
+  
+}
+
+.validateButton{
+  background-color: #0B3F7B;
+  color: #FFFFFF;
+}
+
+.displayVisible{
+  visibility: visible;
+}
+
+.displayNone{
+  display: none;
+}
+
+.pushRight{
+  float: right;
+  margin-top: -10px;
+  margin-right:40px;
 }

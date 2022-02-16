@@ -10,10 +10,10 @@ function Coupon({couponCode,startDate,endDate,couponTypeId,idiosyncrasy,minAmoun
   }
   return (
     <div className={couponType?"Coupon flatCoupons":"Coupon percentageCoupons"}>
-      <h4>{couponCode}</h4>
-      <p>{startDate}-{endDate}</p>
-      <p>{idiosyncrasy}</p>
-      <p>{minAmount}</p>
+      <h3>{couponCode}</h3>
+      <p>Validity : {startDate}-{endDate}</p>
+      <p>Discount : {idiosyncrasy}{couponType? "/-" : "%"}</p>
+      <p>Minimum amount : {minAmount}/-</p>
     </div>
   )
 }
