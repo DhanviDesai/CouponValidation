@@ -1,1 +1,1 @@
-from mongo_client import DbClient
+from .mongo_client import DbClient

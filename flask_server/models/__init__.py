@@ -1,2 +1,2 @@
-from coupon import Coupon
-from status import Status
+from .coupon import Coupon
+from .status import Status

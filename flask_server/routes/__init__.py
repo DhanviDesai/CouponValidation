@@ -1,1 +1,1 @@
-from coupon import COUPON_BLUEPRINT
+from .coupon import COUPON_BLUEPRINT
