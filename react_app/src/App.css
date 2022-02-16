@@ -1,38 +1,99 @@
 .App {
   text-align: center;
+  overflow-y: visible;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Background{
+  position: absolute;
+  width: 51vw;
+  height: 70vh;
+  background-color: #FFFFFF;
+  top: 15vh;
+  left: 24.5vw;
+  text-align: center;
+  overflow-y: auto;
+  font-family: 'Roboto';
+  overflow-x: hidden;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  font-family:'Gruppo', cursive;
+  font-size: 300%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabButton{
+  width: 17vw;
+  height:8vh;
+  border: none;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.Coupon{
+  min-width: 20vw;
+  min-height: 15vh;
+  display: block;
+  margin-top: 2vh;
+  margin-bottom:2vh;
+  border-radius: 4px;
+  color: #CECECE;
+}
+
+.couponHolder{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tab layout css*/
+.bloc-tabs {
+  display: flex;
+  
+}
+.tabs {
+  padding: 20px;
+  text-align: center;
+  width: 50vw;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  font-size: large;
+  border: none;
+  background-color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-tabs  {
+  border-bottom: 1px solid #06081C;
+}
+
+/* button {
+  border: none;
+  
+} */
+.content {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.active-content {
+  display: block;
+}
+/*Tab layout css done*/
+
+.flatCoupons{
+  background-color: #3E4272;
+}
+
+.percentageCoupons{
+  background-color: #3E726E;
+}
+
+.deleteButton{
+  float: right;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
 }
