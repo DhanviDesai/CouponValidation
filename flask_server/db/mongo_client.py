@@ -3,8 +3,8 @@ import json
 from flask import jsonify
 
 
-import flask_server.config as config
-from flask_server.models import Coupon
+import config as config
+from models import Coupon
 
 # client = MongoClient("mongodb+srv://dhanvi:1234@cluster0.ljvxd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 

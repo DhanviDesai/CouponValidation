@@ -3,9 +3,9 @@ from dateutil.parser import parse
 import uuid
 
 
-from flask_server.db import DbClient
-from flask_server.models import Status
-import flask_server.config as config
+from db import DbClient
+from models import Status
+import config as config
 
 class CouponRepo:
 
