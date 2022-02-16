@@ -1,6 +1,6 @@
 from flask import Flask, send_from_directory
 from flask.blueprints import Blueprint
-from .routes import COUPON_BLUEPRINT
+from routes import COUPON_BLUEPRINT
 import config
 from flask_cors import CORS,cross_origin
 

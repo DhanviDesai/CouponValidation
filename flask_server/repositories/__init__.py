@@ -1,1 +1,1 @@
-from .coupon import CouponRepo
+from coupon import CouponRepo
