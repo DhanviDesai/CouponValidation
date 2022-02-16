@@ -1,6 +1,6 @@
 from flask import Blueprint
 from flask_restful import Api
-from resources import AddCouponResource,CouponListResource,ValidateCouponResource,DeleteInactiveCouponsResource
+from flask_server.resources import AddCouponResource,CouponListResource,ValidateCouponResource,DeleteInactiveCouponsResource
 
 COUPON_BLUEPRINT = Blueprint("coupon",__name__)
 

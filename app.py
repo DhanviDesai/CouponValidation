@@ -1,7 +1,7 @@
 from flask import Flask
 from flask.blueprints import Blueprint
-import routes
-import config
+import flask_server.routes as routes
+import flask_server.config as config
 
 server = Flask(__name__)
 

@@ -3,8 +3,8 @@ from flask_restful import Resource
 from flask import jsonify
 
 
-from repositories import CouponRepo
-import config
+from flask_server.repositories import CouponRepo
+import flask_server.config as config
 
 couponRepo = CouponRepo()
 
