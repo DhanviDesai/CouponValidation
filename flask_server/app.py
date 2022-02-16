@@ -13,4 +13,6 @@ app.register_blueprint(COUPON_BLUEPRINT)
 def serve():
     return send_from_directory(app.static_folder,"index.html")
 
-app.run()
+@app.route('/welcome')
+def welcome():
+    return '<h1>Welcome to CouBase server</h1>'
