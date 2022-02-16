@@ -12,6 +12,7 @@ for blueprint in vars(routes).values():
         app.register_blueprint(blueprint)
 
 @app.route('/')
+@cross_origin
 def serve():
     return send_from_directory(app.static_folder,"index.html")
 
