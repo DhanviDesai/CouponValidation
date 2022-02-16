@@ -2,7 +2,7 @@
 
 This project is deployed on [Heroku](https://coubase.herokuapp.com).
 
-`Note : coupon codes are generated automatically upon creation of a new coupon. These have to be used to validate the coupons`
+##### `Note : coupon codes are generated automatically upon creation of a new coupon. These have to be used to validate the coupons`
 
 ## To run locally
 
