@@ -64,10 +64,12 @@
   font-size: large;
   border: none;
   background-color: #FFFFFF;
+  opacity: 25%;
 }
 
 .active-tabs  {
   border-bottom: 1px solid #0B3F7B;
+  opacity: 100%;
 }
 
 /* button {
