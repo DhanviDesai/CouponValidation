@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../App.css";
+import CreateCoupon from "./CreateCoupon";
 import ListCoupon from "./ListCoupon";
 import ValidateCoupon from "./ValidateCoupon";
 
@@ -59,7 +60,7 @@ function Tabs() {
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          
+            <CreateCoupon />
         </div>
 
         <div

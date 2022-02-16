@@ -7,9 +7,9 @@
 .Background{
   position: absolute;
   width: 51vw;
-  height: 70vh;
+  height: 80vh;
   background-color: #FFFFFF;
-  top: 15vh;
+  top: 10vh;
   left: 24.5vw;
   text-align: center;
   overflow-y: auto;
@@ -20,7 +20,7 @@
 
 .title{
   font-family:'Gruppo', cursive;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .tabButton{
@@ -147,4 +147,20 @@
   float: right;
   margin-top: -10px;
   margin-right:40px;
+}
+
+.inputPadding{
+  padding: 10px;
+}
+
+.radioInput{
+  padding: 20px;
+  margin: 20px;
+  font-size: large;
+}
+
+.radioInputOuter{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
