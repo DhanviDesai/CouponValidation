@@ -3,9 +3,9 @@ from dateutil.parser import parse
 import uuid
 
 
-from .db import DbClient
-from .models import Status
-from . import config
+from db import DbClient
+from models import Status
+import config
 
 class CouponRepo:
 
